@@ -425,6 +425,8 @@ ul {
   border-radius: var(--rounded-lg);
   overflow: hidden;
   background-color: var(--colors-surface-card);
+  break-inside: avoid;
+  margin-bottom: var(--spacing-sm);
 }
 
 .pin-card-large .pin-image {
@@ -1019,6 +1021,14 @@ ul {
 
   .primary-nav .nav-search .search-bar input {
     display: none;
+  }
+
+  .search-bar.mobile-expanded {
+    max-width: 100%;
+  }
+
+  .search-bar.mobile-expanded input {
+    display: block;
   }
 
   .section-padding {
