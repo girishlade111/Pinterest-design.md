@@ -375,6 +375,7 @@ ul {
    Pin Card
    ============================ */
 .pin-card {
+  position: relative;
   background-color: var(--colors-surface-card);
   border-radius: var(--rounded-md);
   overflow: hidden;
