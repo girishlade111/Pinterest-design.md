@@ -396,7 +396,13 @@ ul {
   border-radius: var(--rounded-full);
   background-color: var(--colors-surface-card);
   padding: 0 15px;
-  transition: background-color 0.15s ease, border 0.15s ease;
+  transition: background-color 0.15s ease, border 0.15s ease, box-shadow 0.15s ease;
+}
+
+@media (hover: hover) {
+  .search-bar:hover {
+    box-shadow: 0 0 0 1px var(--colors-hairline);
+  }
 }
 
 .search-bar:focus-within {
