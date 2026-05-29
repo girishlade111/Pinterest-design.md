@@ -439,6 +439,14 @@ ul {
   overflow: hidden;
   break-inside: avoid;
   margin-bottom: var(--spacing-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .pin-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
 }
 
 .pin-card .pin-image {
