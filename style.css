@@ -185,6 +185,15 @@ ul {
   font-weight: 600;
   line-height: 1.4;
   color: var(--colors-ink-soft);
+  transition: text-decoration-color 0.15s ease;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+@media (hover: hover) {
+  .link-inline:hover {
+    text-decoration-color: currentColor;
+  }
 }
 
 /* ============================
