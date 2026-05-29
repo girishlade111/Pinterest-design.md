@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinterest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Primary Nav -->
+  <nav class="primary-nav">
+    <div class="nav-inner">
+      <button class="hamburger" id="hamburgerBtn" aria-label="Menu">☰</button>
+      <div class="nav-logo">
+        <svg class="p-logo" viewBox="0 0 24 24" fill="#e60023"><path d="M12 0C5.372 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.936 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.38l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0z"/></svg>
+      </div>
+      <div class="nav-links">
+        <a href="#">Explore</a>
+        <a href="create.html">Create</a>
+      </div>
+      <div class="nav-search">
+        <div class="search-bar">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search for ideas, fashion...">
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a href="#">About</a>
+        <a href="#">Businesses</a>
+        <a href="create.html">Create</a>
+        <a href="#" id="loginBtn">Log in</a>
+        <button class="btn btn-primary" id="signupBtn">Sign up</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-xl hero-headline">Create the life you love on Pinterest</h1>
+      <p class="hero-subtitle">Find ideas, save them, and bring them to life. Discover the perfect recipe, home redesign, outfit, or project.</p>
+      <button class="btn btn-primary" style="font-size:16px;padding:10px 24px;height:48px;">Join Pinterest for free</button>
+    </div>
+  </section>
+
+  <!-- Pin Grid Section -->
+  <section class="pin-grid">
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin1/300/400" alt="Pin" class="pin-image" loading="lazy">
+      <span class="pin-overlay-pill">Cherry red</span>
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin2/300/500" alt="Pin" class="pin-image" loading="lazy">
+      <span class="pin-overlay-pill">Preppy look</span>
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin3/300/350" alt="Pin" class="pin-image" loading="lazy">
+      <span class="pin-overlay-pill">Earthy space inspo</span>
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin4/300/450" alt="Pin" class="pin-image" loading="lazy">
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin5/300/380" alt="Pin" class="pin-image" loading="lazy">
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin6/300/420" alt="Pin" class="pin-image" loading="lazy">
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin7/300/480" alt="Pin" class="pin-image" loading="lazy">
+    </div>
+    <div class="pin-card">
+      <img src="https://picsum.photos/seed/pin8/300/360" alt="Pin" class="pin-image" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Feature Row: Bring your favorite ideas to life -->
+  <section class="feature-row">
+    <div class="container">
+      <div class="feature-card">
+        <img src="https://picsum.photos/seed/feature1/400/500" alt="Feature" class="feature-image" loading="lazy">
+        <div class="feature-content">
+          <h2 class="heading-xl">Bring your favorite ideas to life</h2>
+          <p class="body-md">From home decor to fashion, find inspiration for every part of your life. Save what you love and shop the looks you discover.</p>
+          <button class="btn btn-primary">Get started</button>
+        </div>
+      </div>
+
+      <div class="feature-card feature-card-soft reverse">
+        <img src="https://picsum.photos/seed/feature2/400/500" alt="Feature" class="feature-image" loading="lazy">
+        <div class="feature-content">
+          <h2 class="heading-xl">Pinterest for your brand</h2>
+          <p class="body-md">Reach millions of people looking for their next purchase. Showcase your products and drive sales with Pinterest ads.</p>
+          <button class="btn btn-primary">Learn more</button>
+        </div>
+      </div>
+
+      <div class="feature-card">
+        <img src="https://picsum.photos/seed/feature3/400/500" alt="Feature" class="feature-image" loading="lazy">
+        <div class="feature-content">
+          <h2 class="heading-xl">Where your content can thrive</h2>
+          <p class="body-md">Creators earn money and grow their audience by sharing ideas that inspire action. Join the creator community on Pinterest.</p>
+          <button class="btn btn-primary">Start creating</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Tiles -->
+  <section class="feature-row">
+    <div class="container">
+      <h2 class="heading-xl" style="text-align:center;margin-bottom:var(--spacing-xl);">Explore popular categories</h2>
+      <div class="category-grid">
+        <div class="category-tile">
+          <img src="https://picsum.photos/seed/cat1/200/200" alt="Home" class="category-image" loading="lazy">
+          <span class="category-label">Home Decor</span>
+        </div>
+        <div class="category-tile">
+          <img src="https://picsum.photos/seed/cat2/200/200" alt="Fashion" class="category-image" loading="lazy">
+          <span class="category-label">Fashion</span>
+        </div>
+        <div class="category-tile">
+          <img src="https://picsum.photos/seed/cat3/200/200" alt="Food" class="category-image" loading="lazy">
+          <span class="category-label">Food &amp; Drink</span>
+        </div>
+        <div class="category-tile">
+          <img src="https://picsum.photos/seed/cat4/200/200" alt="Travel" class="category-image" loading="lazy">
+          <span class="category-label">Travel</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Get the app</h4>
+          <ul>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">Android</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Users</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Shopping</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Pinterest for</h4>
+          <ul>
+            <li><a href="#">Creators</a></li>
+            <li><a href="#">Businesses</a></li>
+            <li><a href="#">Advertisers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-brand">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="#e60023"><path d="M12 0C5.372 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.936 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.024 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.632-2.75-1.38l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.628 0 12-5.372 12-12S18.628 0 12 0z"/></svg>
+          <span class="p-wordmark" style="font-weight:600;color:var(--colors-primary);">Pinterest</span>
+        </div>
+        <span class="caption-sm">&copy; 2026 Pinterest</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Signup Modal -->
+  <div class="modal-overlay" id="signupModal">
+    <div class="modal-card" style="position:relative;">
+      <button class="btn-icon-circular modal-close" id="modalClose" aria-label="Close">&times;</button>
+      <h2 class="modal-title">Welcome to Pinterest</h2>
+      <p class="modal-subtitle">Find new ideas to try</p>
+      <div class="modal-fields">
+        <input type="email" class="text-input" placeholder="Email" required>
+        <input type="password" class="text-input" placeholder="Password" required>
+        <input type="text" class="text-input" placeholder="Birthdate" required>
+        <select class="text-input" required>
+          <option value="">Country</option>
+          <option value="US">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="CA">Canada</option>
+        </select>
+      </div>
+      <button class="btn btn-primary">Continue</button>
+      <div class="modal-footer-link">
+        <a href="#">Already a member? Log in</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
