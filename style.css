@@ -730,6 +730,13 @@ ul {
   line-height: 1.4;
   color: var(--colors-ink);
   white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+@media (hover: hover) {
+  .primary-nav .nav-links a:hover {
+    opacity: 0.7;
+  }
 }
 
 .primary-nav .nav-search {
