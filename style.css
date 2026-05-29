@@ -442,6 +442,13 @@ ul {
   padding: 8px;
   color: var(--colors-mute);
   font-size: 16px;
+  transition: opacity 0.15s ease;
+}
+
+@media (hover: hover) {
+  .search-toggle:hover {
+    opacity: 0.7;
+  }
 }
 
 /* ============================
@@ -792,6 +799,13 @@ ul {
   padding: 8px;
   color: var(--colors-ink);
   font-size: 24px;
+  transition: opacity 0.15s ease;
+}
+
+@media (hover: hover) {
+  .hamburger:hover {
+    opacity: 0.7;
+  }
 }
 
 /* ============================
