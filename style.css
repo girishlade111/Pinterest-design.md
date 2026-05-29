@@ -212,13 +212,19 @@ ul {
   border-radius: var(--rounded-md);
   border: none;
   cursor: pointer;
-  transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
   white-space: nowrap;
 }
 
 .btn-primary {
   background-color: var(--colors-primary);
   color: var(--colors-canvas);
+}
+
+@media (hover: hover) {
+  .btn-primary:hover {
+    background-color: var(--colors-primary-pressed);
+  }
 }
 
 .btn-primary:active {
