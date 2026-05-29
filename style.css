@@ -544,6 +544,14 @@ ul {
   display: flex;
   align-items: center;
   gap: var(--spacing-xxl);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@media (hover: hover) {
+  .feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
 }
 
 .feature-card-soft {
