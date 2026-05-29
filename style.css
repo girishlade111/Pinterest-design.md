@@ -467,6 +467,13 @@ ul {
   border-radius: var(--rounded-full);
   background-color: var(--colors-canvas);
   color: var(--colors-ink);
+  transition: transform 0.15s ease;
+}
+
+@media (hover: hover) {
+  .pin-card:hover .pin-overlay-pill {
+    transform: scale(1.05);
+  }
 }
 
 .pin-card-large {
