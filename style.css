@@ -269,6 +269,14 @@ ul {
   cursor: pointer;
   color: var(--colors-ink);
   font-size: 18px;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+@media (hover: hover) {
+  .btn-icon-circular:hover {
+    background-color: var(--colors-secondary-bg);
+    transform: scale(1.05);
+  }
 }
 
 .btn-pill-on-image {
@@ -285,6 +293,14 @@ ul {
   color: var(--colors-ink);
   border: none;
   cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+@media (hover: hover) {
+  .btn-pill-on-image:hover {
+    transform: scale(1.04);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .btn-disabled {
@@ -317,7 +333,13 @@ ul {
   border: none;
   cursor: pointer;
   white-space: nowrap;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+
+@media (hover: hover) {
+  .filter-chip:hover:not(.active) {
+    background-color: var(--colors-hairline-soft);
+  }
 }
 
 .filter-chip.active {
