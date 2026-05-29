@@ -276,6 +276,13 @@ ul {
 }
 
 /* ============================
+   Section Padding Utility
+   ============================ */
+.section-padding {
+  padding: var(--spacing-section) 0;
+}
+
+/* ============================
    Filter Chip
    ============================ */
 .filter-chip {
@@ -839,6 +846,33 @@ ul {
 }
 
 /* ============================
+   Mobile Drawer
+   ============================ */
+.drawer-visible {
+  display: flex !important;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background-color: var(--colors-canvas);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  border-bottom: 1px solid var(--colors-hairline);
+  z-index: 99;
+  gap: var(--spacing-md);
+}
+
+.drawer-visible a,
+.drawer-visible .btn {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.primary-nav.drawer-open .nav-search {
+  display: none;
+}
+
+/* ============================
    Responsive
    ============================ */
 
@@ -885,12 +919,24 @@ ul {
     display: none;
   }
 
-  .primary-nav .nav-actions a:not(.btn) {
+  .primary-nav .nav-actions a:not(.btn):not(.drawer-visible a) {
     display: none;
   }
 
   .primary-nav .nav-search .search-bar {
     max-width: 200px;
+  }
+
+  .search-toggle {
+    display: block;
+  }
+
+  .search-bar input {
+    display: none;
+  }
+
+  .search-bar.mobile-expanded input {
+    display: block;
   }
 
   .hamburger {
@@ -924,14 +970,6 @@ ul {
 
   .modal-overlay {
     align-items: flex-end;
-  }
-
-  .search-bar.mobile-hidden input {
-    display: none;
-  }
-
-  .search-bar.mobile-expanded input {
-    display: block;
   }
 
   .section-padding {

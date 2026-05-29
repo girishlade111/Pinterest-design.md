@@ -7,12 +7,14 @@ const modalClose = document.getElementById('modalClose');
 function openModal() {
   if (signupModal) {
     signupModal.classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
 }
 
 function closeModal() {
   if (signupModal) {
     signupModal.classList.remove('open');
+    document.body.style.overflow = '';
   }
 }
 
@@ -52,14 +54,49 @@ filterChips.forEach(chip => {
   });
 });
 
-// Hamburger menu toggle
+// Mobile search toggle
+const searchToggles = document.querySelectorAll('.search-toggle');
+
+searchToggles.forEach(btn => {
+  btn.addEventListener('click', function() {
+    const searchBar = this.closest('.search-bar');
+    if (searchBar) {
+      searchBar.classList.toggle('mobile-expanded');
+      const input = searchBar.querySelector('input');
+      if (searchBar.classList.contains('mobile-expanded')) {
+        input.style.display = 'block';
+        input.focus();
+      }
+    }
+  });
+});
+
+// Hamburger menu — mobile drawer toggle
 const hamburgerBtns = document.querySelectorAll('#hamburgerBtn');
 
 hamburgerBtns.forEach(btn => {
   btn.addEventListener('click', function() {
-    const navLinks = this.closest('.nav-inner').querySelector('.nav-links');
+    const nav = this.closest('.primary-nav');
+    nav.classList.toggle('drawer-open');
+    const navLinks = nav.querySelector('.nav-links');
+    const navActions = nav.querySelector('.nav-actions');
     if (navLinks) {
-      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+      navLinks.classList.toggle('drawer-visible');
     }
+    if (navActions) {
+      navActions.classList.toggle('drawer-visible');
+    }
+  });
+});
+
+// Close drawer on link click
+document.querySelectorAll('.nav-links a, .nav-actions a').forEach(link => {
+  link.addEventListener('click', function() {
+    const nav = this.closest('.primary-nav');
+    nav.classList.remove('drawer-open');
+    const navLinks = nav.querySelector('.nav-links');
+    const navActions = nav.querySelector('.nav-actions');
+    if (navLinks) navLinks.classList.remove('drawer-visible');
+    if (navActions) navActions.classList.remove('drawer-visible');
   });
 });
