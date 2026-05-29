@@ -236,6 +236,12 @@ ul {
   color: var(--colors-ink);
 }
 
+@media (hover: hover) {
+  .btn-secondary:hover {
+    background-color: var(--colors-secondary-pressed);
+  }
+}
+
 .btn-secondary:active {
   background-color: var(--colors-secondary-pressed);
 }
@@ -243,6 +249,12 @@ ul {
 .btn-tertiary {
   background-color: transparent;
   color: var(--colors-ink);
+}
+
+@media (hover: hover) {
+  .btn-tertiary:hover {
+    background-color: var(--colors-surface-card);
+  }
 }
 
 .btn-icon-circular {
